@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <!-- CSS only -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"/>
     <link rel="stylesheet" href="assets\style.css" />
 </head>
 
@@ -19,15 +20,25 @@
     <div class="col-12 col-md-4">
       <div class="card">
         <h3 class="card-header">Search for a City</h3>
-        <form id="city-search" class="card-body">
-          <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+        <form id="user-form" class="card-body">
+          <input name="city-name" id="city-name" type="text" autofocus="true" class="form-input" />
           <!--input looking glass icon for search button-->
           <button type="submit" class="btn"><span class="oi oi-magnifying-glass"></span></button>
-             
         </form>
-      </div>
-    
+      </div> 
+    </div>
 
+    <div class="col-12 col-md-8">
+      <h3 id="temperature" class="temperature">Temperature:</h3>
+      <h3 id="humidity" class="humidity">Humidity:</h3>
+      <h3 id="wind-speed" class="wind-speed">Wind Speed:</h3>
+      <h3 id="uv-index" class="uv-index">UV Index:</h3>
+      <h3 id="time" class="time"></h3>
+    </div>  
+
+
+</main>
+    
 
   <script src="assets\style.js"></script>
 </body>

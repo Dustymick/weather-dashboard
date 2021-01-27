@@ -16,8 +16,8 @@
     <h1 class="display-3">Weather Dashboard</h1> 
 </header>
 
-<main class="flex-row justify-space-between">
-    <div class="col-12 col-md-4">
+<main class="row justify-space-between">
+    <div class="col-md-4">
       <div class="card">
         <h3 class="card-header">Search for a City</h3>
         <form id="user-form" class="card-body">
@@ -28,13 +28,15 @@
       </div> 
     </div>
 
-    <div class="col-12 col-md-8">
+    <div class="col-md-8">
       <h3 id="temperature" class="temperature">Temperature:</h3>
       <h3 id="humidity" class="humidity">Humidity:</h3>
       <h3 id="wind-speed" class="wind-speed">Wind Speed:</h3>
       <h3 id="uv-index" class="uv-index">UV Index:</h3>
       <h3 id="time" class="time"></h3>
     </div>  
+
+    <div id="five-day-weather" class="row"></div>
 
 
 </main>

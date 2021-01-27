@@ -5,5 +5,17 @@
     text-align: center;
 }
 
-
+.btn {
+    background-color: darkturquoise;
+    color: floralwhite;
+}
   
+.col-md-8 {
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+}
+
+.row {
+    justify-content: center;
+    
+}

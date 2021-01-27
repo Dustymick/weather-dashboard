@@ -16,6 +16,5 @@
 }
 
 .row {
-    justify-content: center;
-    
+    justify-content: center space-between;
 }

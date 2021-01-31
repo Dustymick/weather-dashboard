@@ -48,11 +48,12 @@ var displayCityName = function(data) {
     var windSpeed = data.list[0].wind.speed
     var uvIndex = data.list[0].visibility
     var time = moment().format('MMMM Do YYYY, h:mm:ss a');
+    document.querySelector(".icon").innerHTML = "<img src='http://openweathermap.org/img/w/" + data.list[0].weather[0].icon + ".png' alt='Icon depicting current weather.'></img>"
     console.log(temperature)
     cityNameEl.textContent = "City: " + city
     cityTempertureEl.textContent = "Temperature: " + convertKelvin(temperature) + " F"
     cityHumidityEl.textContent = "Humidity: " + humidity + "%"
-    cityWindSpeedEl.textContent = "Wind Speed: " + windSpeed
+    cityWindSpeedEl.textContent = "Wind Speed: " + windSpeed + " MPH"
     cityUvIndex.textContent = "UV Index: " + uvIndex
     cityTimeEl.textContent = "Time: " + time
 

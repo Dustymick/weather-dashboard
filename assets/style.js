@@ -14,7 +14,7 @@ var formSubmitHandler = function(event) {
     var cityname = cityInputEl.value.trim();
      if (cityname) {
          getCityWeather(cityname);
-         
+         saveCities(cityname);
      } else {
          alert("Please enter a city name");
      }
@@ -35,6 +35,25 @@ var getCityWeather = function(cityname) {
     });
 };
 
+var saveCities = function(newcity) {
+    var cityArray = JSON.parse(localStorage.getItem("city-array")) || []
+    cityArray.push(newcity)
+    localStorage.setItem("city-array",JSON.stringify(cityArray))
+}
+
+var displayCityButtons = function() {
+    var cityArray = JSON.parse(localStorage.getItem("city-array")) || []
+    var searchHistory = document.getElementById("history")
+    cityArray.forEach(element => {
+    var button = document.createElement("button")
+    var li = document.createElement("li")
+    button.textContent = element
+    li.appendChild(button)
+    searchHistory.appendChild(li)
+    });
+}
+
+displayCityButtons();
 
 var convertKelvin = function(kelvin) {
     return parseInt((kelvin - 273.15) * 1.8 + 32);

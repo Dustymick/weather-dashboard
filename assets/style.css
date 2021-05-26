@@ -23,3 +23,23 @@
     flex: row;
     justify-content: flex-start;
 }
+
+.five-day-card {
+    background-color: darkturquoise;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.history-button {
+    background-color: darkturquoise;
+    border: none;
+    color: white;
+    border-radius: .2rem;
+    margin: .3rem;
+    padding: .3rem;
+}
+
+.history-button:hover, .btn:hover {
+    background-color: rgb(7, 157, 160);
+}
